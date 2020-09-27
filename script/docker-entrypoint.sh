@@ -32,4 +32,4 @@ if [ -z "$MOCK_SERVICE_PATH" ]; then
 else
 	export MOCK_SERVICE_PATH=" -a $MOCK_SERVICE_PATH "
 fi
-mockservicerunner.sh -Djetty.host=0.0.0.0 -Djava.awt.headless=true -Dfile.encoding=UTF8 -p $MOCK_SERVICE_PORT -m "$MOCK_SERVICE_NAME" "$MOCK_PATH $PROJECT"
+mockservicerunner.sh -Djetty.host=0.0.0.0 -Djava.awt.headless=true -Dfile.encoding=UTF8 -p $MOCK_SERVICE_PORT -m "$MOCK_SERVICE_NAME" "$MOCK_SERVICE_PATH" "$PROJECT"
