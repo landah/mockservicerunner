@@ -1,6 +1,6 @@
 FROM	openjdk:11
 RUN 	[ "apt-get", "update" ]
-RUN 	[ "apt-get", "install", "-y", "vim", "wget" ]
+RUN 	[ "apt-get", "install", "-y", "vim", "wget", "sed" ]
 RUN 	[ "wget", "https://s3.amazonaws.com/downloads.eviware/soapuios/5.6.0/SoapUI-x64-5.6.0.sh", "-P", "/tmp" ]
 RUN 	[ "wget", "https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar", "-P", "/tmp"]
 RUN 	[ "mkdir", "-p", "/usr/local/SmartBear/SoapUI-5.6.0"]
