@@ -13,9 +13,8 @@ Run default project
 
 Run my custom project 
 >docker run -d -p 8080:8080 -e PROJECT=MyCustomProject.xml landah/mockservicerunner
-Extra options 
 
-Extra Args
+### Extra Args
 - PROJECT: The name of soapui project
 - MOCK_SERVICE_NAME: The name of the MockService to run
 - MOCK_SERVICE_PORT: The local port to listen on, overrides the port configured for the MockService
