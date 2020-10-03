@@ -16,6 +16,7 @@ Run my custom project
 Extra options 
 
 Extra Args
+- PROJECT The name of soapui project
 - MOCK_SERVICE_NAME The name of the MockService to run
 - MOCK_SERVICE_PORT The local port to listen on, overrides the port configured for the MockService
 - MOCK_SERVICE_HOST Override the local hostname in wsdl
